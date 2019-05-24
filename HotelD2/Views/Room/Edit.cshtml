@@ -1,0 +1,33 @@
+﻿@model HotelD2.Entities.Room
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit", "Room", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Category</td>
+            <td>@Html.TextBoxFor(a => a.Category)</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>@Html.TextBoxFor(a => a.Price)</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>@Html.TextBoxFor(a => a.Description)</td>
+        </tr>
+        <tr>
+            <td>Available</td>
+            <td>@Html.CheckBoxFor(a => a.Available)</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Save" />@Html.HiddenFor(a => a.Id)</td>
+        </tr>
+    </table>
+}

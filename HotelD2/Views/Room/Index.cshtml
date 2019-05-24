@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1>Rooms</h1>
+<a href="@Url.Action("Add", "Room")">Add New Room</a>
+<table border="1">
+    <tr>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Options</th>
+    </tr>
+    @foreach (var room in ViewBag.rooms)
+    {
+        <tr>
+            <td>@room.Category</td>
+            <td>@room.Price</td>
+            <td>@room.Description</td>
+            <td>@room.Available</td>
+            <td>
+                <a href="@Url.Action("Edit", "Room", new { id = room.Id })">Edit</a> | 
+                <a href="@Url.Action("Delete", "Room", new { id = room.Id })" onclick="return confirm('Are you sure?')">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
