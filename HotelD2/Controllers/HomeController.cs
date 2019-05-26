@@ -15,14 +15,14 @@ namespace HotelD2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Softver za hotelske sobe";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Nas kontaktni info.";
 
             return View();
         }

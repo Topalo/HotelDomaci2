@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5ce810ac2a9b3441bc2a568d"},"category":"Jednokrevetna soba","price":"100","description":"Jednokrevetna soba","available":true}
+{"_id":{"$oid":"5ceac5762a9b344138b36110"},"category":"Dvokrevetna","price":"200","description":"Dvokrevetna soba","available":true}
+{"_id":{"$oid":"5ceac59b2a9b344138b36111"},"category":"Trokrevetna","price":"300","description":"Trokrevetni apartman","available":true}
+{"_id":{"$oid":"5ceac5cd2a9b344138b36112"},"category":"Cetvorokrevetna","price":"400","description":"Cetvorokrevetni apartman","available":true}
+{"_id":{"$oid":"5ceac5df2a9b344138b36113"},"category":"Petokrevetna","price":"500","description":"Petokrevetni Aparatman","available":false}
